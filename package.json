@@ -85,7 +85,7 @@
     "eslint-config-typed": "4.0.5",
     "fast-glob": "3.3.3",
     "jiti": "2.6.1",
-    "markdownlint": "0.39.0",
+    "markdownlint": "0.40.0",
     "markdownlint-cli2": "0.19.1",
     "npm-run-all2": "8.0.4",
     "prettier": "3.7.3",
