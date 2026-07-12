@@ -71,7 +71,7 @@ const build = async (skipChecks: boolean): Promise<void> => {
     startMessage: 'Compiling sources with tsc',
     action: () =>
       runCmdStep(
-        `node ${nativeTsc} --project "${tsconfigPath}"`,
+        `node "${nativeTsc}" --project "${tsconfigPath}"`,
         'TypeScript compilation failed',
       ),
     successMessage: 'Build completed',
