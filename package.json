@@ -65,8 +65,8 @@
   "dependencies": {
     "@octokit/core": "^7.0.6",
     "dotenv": "^17.4.2",
-    "octokit-safe-types": "^1.2.19",
-    "ts-data-forge": "^12.2.2",
+    "octokit-safe-types": "^1.2.21",
+    "ts-data-forge": "^14.0.0",
     "ts-fortress": "^11.2.0",
     "ts-type-forge": "^9.1.1"
   },
@@ -85,6 +85,9 @@
     "cspell": "10.0.1",
     "eslint": "10.8.0",
     "eslint-config-typed": "5.8.2",
+    "eslint-plugin-ts-data-forge": "0.3.0",
+    "eslint-plugin-ts-fortress": "0.4.0",
+    "eslint-plugin-ts-type-forge": "0.4.3",
     "jiti": "2.7.0",
     "markdownlint": "0.41.1",
     "markdownlint-cli2": "0.23.2",
