@@ -2,6 +2,7 @@
 
 import 'dotenv/config';
 import * as util from 'node:util';
+import { Arr } from 'ts-data-forge';
 
 const HELP = `
 Usage: repo-settings <command> [target] [options]
@@ -76,7 +77,7 @@ const fail: (message: string) => never = (message) => {
 };
 
 const { values, positionals } = util.parseArgs({
-  args: process.argv.slice(2),
+  args: Arr.skip(process.argv, 2),
   options: {
     owner: { type: 'string' },
     repo: { type: 'string' },
@@ -86,10 +87,10 @@ const { values, positionals } = util.parseArgs({
   allowPositionals: true,
 });
 
-if (values.help === true || positionals.length === 0) {
-  console.log(HELP);
+if (values.help === true || Arr.isEmpty(positionals)) {
+  console.info(HELP);
 
-  process.exit(positionals.length === 0 ? 1 : 0);
+  process.exit(Arr.isEmpty(positionals) ? 1 : 0);
 }
 
 const [commandArg, targetArg = 'all'] = positionals;
