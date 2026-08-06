@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  ts-type-forge: ^9.1.1
+
 importers:
 
   .:
@@ -4065,26 +4068,6 @@ packages:
     peerDependencies:
       prettier: '>=3.0.0'
 
-  ts-type-forge@3.2.0:
-    resolution: {integrity: sha512-QoHXXnTyW00e1CLgWvX3U+Ko2NpMJYji6K/muFHh+2VdBKpuM+vXWam3BUDC+3I5yarXmLwXloudr2tfVHcZiA==}
-    engines: {node: '>=22.18.0', pnpm: '>=9.0.0'}
-
-  ts-type-forge@4.0.0:
-    resolution: {integrity: sha512-7O9BFH3cxfmr5HR7UUcQ8DiDC/zr6TS1aYfbe8ziyLU3MkXeeE4fs28i6L7ZddnlTQkg1ZOTa9IikJ2aHtg1mQ==}
-    engines: {node: '>=22.22.2', pnpm: '>=9.0.0'}
-
-  ts-type-forge@5.0.0:
-    resolution: {integrity: sha512-+7t3WkIDz5IsAhPR7r0zGhWjqccRRsbiPC2F0d3hTl911GttOACd45PLIzoHha10384qEHNGIl4yi4kTgcQM2w==}
-    engines: {node: '>=22.22.2', pnpm: '>=9.0.0'}
-
-  ts-type-forge@7.2.1:
-    resolution: {integrity: sha512-XfF2CYB/2YoKNKfbTQNDAyXRNc7qpLZqNWL8FIZYlOPiODfn9B0oAIh4ogduRoXJAg5hunj473rZJ0IAolIslw==}
-    engines: {node: '>=22.22.2', pnpm: '>=9.0.0'}
-
-  ts-type-forge@8.1.0:
-    resolution: {integrity: sha512-yJI4qPNvSoEyJYinH/K9s2MnGXXVDln5G9dC4cUN9DAj5ELOXN6xd+Ge2gsCCVhKRHtx5iQzYjxkmpCxX8tl8Q==}
-    engines: {node: '>=22.22.2', pnpm: '>=9.0.0'}
-
   ts-type-forge@9.1.1:
     resolution: {integrity: sha512-txkc/fV3VAtUx7SDFZY4lHyzmLNrcdvtoYiIqejaIyfiohLt0ErW8Cu/9KvLQLEXt7Pek8vWPmpXiDAQ/0VbJA==}
     engines: {node: '>=22.22.2', pnpm: '>=9.0.0'}
@@ -6445,7 +6428,7 @@ snapshots:
       is-immutable-type: 5.0.4(eslint@10.8.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       micromatch: 4.0.8
       ts-data-forge: 11.0.1(typescript@6.0.3)
-      ts-type-forge: 7.2.1
+      ts-type-forge: 9.1.1
       tsutils: 3.21.0(typescript@6.0.3)
       typescript: 6.0.3
       typescript-eslint: 8.65.0(eslint@10.8.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
@@ -6676,7 +6659,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/utils': 8.65.0(eslint@10.8.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       eslint: 10.8.0(jiti@2.7.0)(supports-color@7.2.0)
-      ts-type-forge: 7.2.1
+      ts-type-forge: 9.1.1
       typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
@@ -7911,7 +7894,7 @@ snapshots:
       '@octokit/types': 16.0.0
       ts-data-forge: 12.2.2(typescript@6.0.3)
       ts-fortress: 11.2.0(typescript@6.0.3)
-      ts-type-forge: 8.1.0
+      ts-type-forge: 9.1.1
     transitivePeerDependencies:
       - typescript
 
@@ -8598,7 +8581,7 @@ snapshots:
     dependencies:
       ts-data-forge: 7.1.1(typescript@6.0.3)
       ts-morph: 28.0.0
-      ts-type-forge: 4.0.0
+      ts-type-forge: 9.1.1
     optionalDependencies:
       dedent: 1.7.2
       ts-repo-utils: 10.1.6(prettier@3.9.6)(supports-color@7.2.0)(typescript@6.0.3)
@@ -8608,13 +8591,13 @@ snapshots:
   ts-data-forge@11.0.1(typescript@6.0.3):
     dependencies:
       '@sindresorhus/is': 8.1.0
-      ts-type-forge: 7.2.1
+      ts-type-forge: 9.1.1
       typescript: 6.0.3
 
   ts-data-forge@12.2.2(typescript@6.0.3):
     dependencies:
       '@sindresorhus/is': 8.1.0
-      ts-type-forge: 7.2.1
+      ts-type-forge: 9.1.1
       typescript: 6.0.3
 
   ts-data-forge@14.0.0(typescript@6.0.3):
@@ -8626,13 +8609,13 @@ snapshots:
   ts-data-forge@7.1.1(typescript@6.0.3):
     dependencies:
       '@sindresorhus/is': 8.1.0
-      ts-type-forge: 4.0.0
+      ts-type-forge: 9.1.1
       typescript: 6.0.3
 
   ts-data-forge@9.0.1(typescript@6.0.3):
     dependencies:
       '@sindresorhus/is': 8.1.0
-      ts-type-forge: 5.0.0
+      ts-type-forge: 9.1.1
       typescript: 6.0.3
 
   ts-declaration-location@1.0.7(typescript@6.0.3):
@@ -8644,7 +8627,7 @@ snapshots:
     dependencies:
       '@sindresorhus/is': 8.1.0
       ts-data-forge: 12.2.2(typescript@6.0.3)
-      ts-type-forge: 8.1.0
+      ts-type-forge: 9.1.1
     transitivePeerDependencies:
       - typescript
 
@@ -8663,21 +8646,11 @@ snapshots:
       micromatch: 4.0.8
       prettier: 3.9.6
       ts-data-forge: 9.0.1(typescript@6.0.3)
-      ts-type-forge: 3.2.0
+      ts-type-forge: 9.1.1
       tsx: 4.23.1
     transitivePeerDependencies:
       - supports-color
       - typescript
-
-  ts-type-forge@3.2.0: {}
-
-  ts-type-forge@4.0.0: {}
-
-  ts-type-forge@5.0.0: {}
-
-  ts-type-forge@7.2.1: {}
-
-  ts-type-forge@8.1.0: {}
 
   ts-type-forge@9.1.1: {}
 

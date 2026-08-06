@@ -3,6 +3,17 @@ update:
   ignoreDeps:
     - typescript
 
+# Keep a single copy of ts-type-forge in the dependency tree.
+# ts-fortress@11.2.0 (the latest release) still declares `ts-type-forge: 8.x`,
+# and a duplicated ts-type-forge makes the declaration emit fail with TS2883
+# ("The inferred type of 'RepositoryPicked' cannot be named without a reference
+# to 'MergeIntersection' from '.pnpm/ts-type-forge@8.1.0/node_modules/...'"),
+# because the global types it declares are then unreachable from the emitted
+# `.d.mts`. ts-type-forge is types-only, so overriding it has no runtime effect.
+# Drop this once ts-fortress ships against ts-type-forge 9.x.
+overrides:
+  ts-type-forge: '^9.1.1'
+
 minimumReleaseAge: 10080 # = 7 days
 
 minimumReleaseAgeExclude:
