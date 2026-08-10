@@ -1,3 +1,11 @@
+> [!IMPORTANT]
+>
+> **This repository has moved to [noshiro-pf/mono](https://github.com/noshiro-pf/mono).**
+>
+> Development continues at [`libs/github-settings-as-code`](https://github.com/noshiro-pf/mono/tree/main/libs/github-settings-as-code).
+> The full commit history and every tag came along; releases and issues stay
+> readable here.
+
 # Github Settings as Code
 
 GitHub の repository 設定を JSON ファイルで管理するための CLI。
